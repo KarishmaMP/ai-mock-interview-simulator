@@ -15,7 +15,7 @@ It features MCQ-based technical assessments with randomized questions, along wit
 
 ---
 
-## 🧠 My Contribution
+## 🧠 Contribution
 - Developed core application logic using JavaScript  
 - Implemented MCQ exam module (pagination, timer, scoring system)  
 - Worked on Behavioral Interview module using Web Speech API for speech recognition and transcript handling  
