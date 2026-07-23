@@ -1,0 +1,17 @@
+/* Minimal custom styles (Bootstrap handles most look) */
+body {
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #0f172a;
+}
+.navbar .brand-badge {
+  width: 34px; height: 34px; border-radius: 12px; background:#0f172a;
+}
+.card-raise { transition: transform .15s ease, box-shadow .15s ease; }
+.card-raise:hover { transform: translateY(-2px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important; }
+.small-note { font-size: .9rem; color: #475569; }
+.timer-badge { font-variant-numeric: tabular-nums; }
+.badge-progress { height: 8px; background: #e2e8f0; border-radius: 999px; overflow: hidden; }
+.badge-progress > div { height: 100%; background: #0f172a; }
+.table td, .table th { vertical-align: middle; }
+#bhStart.listening { border-color:#198754; background:#198754; }
+#bhStart.paused { background:transparent; color:#6c757d; border-color:#6c757d; }

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Behavioral Interview</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar bg-white border-bottom sticky-top">
+    <div class="container d-flex justify-content-between">
+      <div class="d-flex align-items-center gap-2">
+        <div class="brand-badge"></div><strong>AI Mock Interview — Behavioral</strong>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span class="badge text-bg-light timer-badge" id="bhTimer">00:00</span>
+        <a href="round.html" class="btn btn-outline-secondary btn-sm">Exit</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <div id="bhCard" class="card shadow-sm">
+      <div class="card-body">
+        <div class="small text-uppercase text-secondary mb-1">Question <span id="bhQNo">1</span>/<span id="bhQTotal">-</span></div>
+        <div class="fs-5 fw-semibold mb-2" id="bhQuestion">Loading...</div>
+        <div class="small-note mb-2">Speak naturally. You can pause/resume. Max 2 minutes per question.</div>
+
+        <div class="d-flex gap-2 mb-3">
+          <button id="bhStart" class="btn btn-dark">🎤 Start</button>
+          <button id="bhPause" class="btn btn-outline-secondary" disabled>⏸ Pause</button>
+          <button id="bhStop" class="btn btn-outline-danger" disabled>⏹ Stop & Evaluate</button>
+        </div>
+
+        <div class="form-floating">
+          <textarea id="bhTranscript" class="form-control" style="height:140px" placeholder="Transcript"></textarea>
+          <label for="bhTranscript">Live transcript (editable)</label>
+        </div>
+      </div>
+    </div>
+<script src="app.js" defer></script>
+<script>window.pageInit && window.pageInit('behavioral');</script>
+
+    <div class="d-flex justify-content-between mt-3">
+      <button id="bhPrev" class="btn btn-outline-secondary" disabled>◀ Previous</button>
+      <button id="bhNext" class="btn btn-dark" disabled>Next ▶</button>
+    </div>
+  </main>
+
+ 
+
+</body>
+</html>
